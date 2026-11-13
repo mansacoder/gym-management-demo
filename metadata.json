@@ -1,0 +1,6 @@
+{
+  "name": "IRON PULSE FITNESS",
+  "description": "Gym owner management console for tracking members, fee dues, expenses, attendance, and monthly profit analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

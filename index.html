@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>IRON PULSE FITNESS — Gym Owner Console</title>
+    <meta name="description" content="Gym owner management console for tracking members, fee dues, expenses, attendance, and monthly profit analytics." />
+    <meta property="og:title" content="IRON PULSE FITNESS — Gym Owner Console" />
+    <meta property="og:description" content="Run your gym from one app: members, fee tracking, expenses, and monthly analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#121316" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="IRON PULSE" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <script>
+      (function () {
+        try {
+          var desc = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (desc && desc.get && !desc.set && desc.configurable) {
+            var origFetch = window.fetch;
+            Object.defineProperty(window, 'fetch', {
+              value: origFetch,
+              writable: true,
+              enumerable: true,
+              configurable: true,
+            });
+          }
+        } catch (_) {}
+        window.addEventListener(
+          'error',
+          function (e) {
+            if (e && e.filename && e.filename.indexOf('chrome-extension://') === 0) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+            }
+          },
+          true
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
